@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+ 
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  display:inline-flex;
+  flex: 1;
+   background-color: #e0f7fa; /* blue color extended to footer */
+  padding-bottom: 2rem; /* optional: space before footer */
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+    gap: 1.5rem; 
+      margin-left: auto; 
+    }
+
+
+.nav-links li a {
+   background-color:lightblue;
+  border-style: inset;
+  border: 5px inset darkcyan;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem; 
+  padding: 8px 20px; 
+  display: inline-block; 
+  border-radius: 10px; 
+}
+
+.nav-links li a:hover {
+    background-color:lightpink;
+  border-style: outset;
+  border: 5px outset darkcyan;
+ 
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+
+
+/* Hero Section */
+.hero {
+  background-color: #e0f7fa;
+  padding: 2rem 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Sections */
+.about-section,
+.projects-section,
+.contact-section {
+  padding: 2rem 0;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #222;
+  color: #ccc;
+  margin-top: 2rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+  }
+}
+
+  .empty-section {
+  height: 350px; /* adjust as needed */
+  background-color: Whisper Gray; /* optional: light gray to make it visible */
+  margin: 20px 0; /* space around the section */
+  border-radius: 10px; /* optional: rounded edges */
+}
+
+/*project section*/
+.projects-section {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.projects-section h2 {
+  text-align: center;
+  color: orange;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  border: 2px solid orange;
+}
+
+.project-card h3 {
+  color: #ff6b00;
+}
+/*about section*/
+.about-section {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.about-section h2 {
+  text-align: center;
+  color: orange;
+}
+
+.about-card {
+  background: white;
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+}
+
+.about-card:hover {
+  transform: scale(1.02);
+  border: 2px solid orange;
+}
+
+.about-card p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
